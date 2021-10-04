@@ -1,0 +1,8 @@
+p, strong{
+    border: 1px solid;
+}
+#caja{
+    margin:20px;
+    padding: 10px;
+    background:rgb(43, 209, 209);
+}
