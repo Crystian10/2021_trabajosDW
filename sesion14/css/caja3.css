@@ -1,0 +1,20 @@
+.tamano {
+    height: 500px;
+    width: 500px;
+}
+#caja1{
+    background-color: red;
+}
+#caja2{
+    background-color: blue;
+    float: right;
+}
+#caja3{
+    background-color: green;
+
+}
+#caja4{
+    background-color: yellowgreen;
+    float: right;
+
+}
