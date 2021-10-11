@@ -1,0 +1,35 @@
+.grid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-auto-rows: 200px 1fr 100px;
+    grid-template-areas: "head head head"
+    "menu contenido aside"
+    "foot  foot foot"
+    ;
+}
+
+header{
+    grid-area: head;
+    background-color: blueviolet;
+}
+nav{
+    grid-area: menu;
+    background-color: cornflowerblue;
+}
+section{
+    grid: contenido;
+    background-color: cyan;
+}
+aside{
+    grid-area: aside;
+    background-color: darkmagenta;
+}
+footer{
+    grid-area: foot;
+    background-color: darkorange;
+}
+
+.a, .b, .c, .d, .e{
+    border: 2px solid black;
+}
