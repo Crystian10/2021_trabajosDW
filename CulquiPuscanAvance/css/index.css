@@ -26,3 +26,6 @@ nav, section {
     float: left;
     height: 350px;
 }
+a+a {
+    margin-left: 100px;
+  }
