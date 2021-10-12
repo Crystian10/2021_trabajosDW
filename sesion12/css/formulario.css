@@ -1,0 +1,12 @@
+h2{
+    color:rgb(22, 87, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+fieldset{
+    background-color: rgb(245, 220, 188);
+}
+textarea, option, input{
+    background-color: cadetblue;
+}
