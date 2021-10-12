@@ -1,0 +1,28 @@
+#perfil{
+    float: left;
+}
+#iniciosesion{
+    float: right;
+}
+header{
+    background-color: rgb(193, 153, 229);
+    height: 130px;
+}
+nav{
+    background-color: rgb(99, 113, 233);
+    width: 25%;
+}
+section{
+    background-color: cornflowerblue;
+    width: 75%;
+}
+
+footer{
+    background-color: rgb(193, 153, 229);
+    height: 100px;
+    clear: left;
+}
+nav, section {
+    float: left;
+    height: 350px;
+}
