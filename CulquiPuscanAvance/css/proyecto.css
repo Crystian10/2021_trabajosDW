@@ -1,0 +1,47 @@
+.fbgh {
+	padding:10px 0 0 0 ;
+	border-top:1px solid #5e5f62;
+	margin:10px 0 0 0 ;
+}
+.fbgh h4 {
+	color:#0f0f0f;
+}
+.fbgh p {
+	color:#070707;
+}
+.fbgh img {
+	padding:2px;
+	border:1px solid #cfd2d4;
+	background-color:#fff;
+}
+.fbgh .col {
+	margin:0;
+	float:left;
+}
+.fbgh .a {
+	float:left;
+}
+.fbgh .c1 {
+	padding:16px 0 0;
+	width:300px;
+}
+.fbgh .c2 {
+	padding:0 0 16px;
+	width:300px;
+}
+.fbgh .c3 {
+	padding:0 0 16px;
+	width:300px;
+}
+.fbgh .c4 {
+	padding:16px 0 0;
+	width:300px;
+}
+.fbgh .c5 {
+	padding:0 0 16px;
+	width:300px;
+}
+.fbgh .c6 {
+	padding:0 0 16px;
+	width:300px;
+}

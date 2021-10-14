@@ -70,7 +70,7 @@ p{
 	float:left;
 }
 .fbg .c1 {
-	padding:16px 0 0 0 0;
+	padding:16px 0 0;
 	width:220px;
 }
 .fbg .c2 {
@@ -78,19 +78,19 @@ p{
 	width:220px;
 }
 .fbg .c3 {
-	padding:0 0 0 0 16px;
+	padding:0 0 16px;
 	width:220px;
 }
 .fbg .c4 {
-	padding:0 0 0 0 16px;
+	padding:0 0 16px;
 	width:220px;
 }
 .fbg .c5 {
-	padding:0 0 0 0 16px;
+	padding:0 0 16px;
 	width:220px;
 }
 .fbg .c6 {
-	padding:0 0 0 0 16px;
+	padding:0 0 16px;
 	width:220px;
 }
 .content {
