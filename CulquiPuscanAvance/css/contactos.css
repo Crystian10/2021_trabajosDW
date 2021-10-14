@@ -1,0 +1,13 @@
+
+fieldset div{
+    background-color: bisque;
+}
+button{
+    background-color: rgb(120, 193, 241);
+}
+input{
+    background-color:rgb(253, 250, 251)
+}
+fieldset input{
+vertical-align: middle;
+}

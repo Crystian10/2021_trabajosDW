@@ -26,7 +26,7 @@ section{
     width: 80%;
     grid-area: my-section;
     float: left;
-    height: 400px;
+    height: auto;
 }
 footer{
     background-color: rgb(193, 153, 229);
