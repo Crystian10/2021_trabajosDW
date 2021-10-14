@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/creacion tablas.css">
+    <title>Factura telefónica</title>
+</head>
+<body>
+    <img src="img/entel.jpg" alt="entel" style="height: 100px" aling=center>
+    <h1  style="color: blue;" ><em>Entel S.A</em> </h1>
+    
+    <table border="1">
+        <caption>Factura detallada</caption>
+         <!--cabecera de la tabla-->
+        <thead>          
+            <tr>
+                <th colspan="5" bgcolor="(70, 70, 247)" >Entel S.A. - Marzo 2019</th>
+            </tr>
+        </thead>
+     <!--finde de cabecera-->
+
+     <!--pie de tabla-->
+     <tfoot>
+         <tr>
+             <td colspan="5" style="font-size:13px"> <em>Entel le informa que puede llamar al numero gratuito 081-808000
+                 para cualquier duda o sugerencia que tegna acerca de esta factura o de nuestros servicios.</em> </td>
+         </tr>
+     </tfoot>
+     <!--fin de pie de tabla-->
+
+     <!--cuerpo de la tabla-->
+     <tbody>
+         <tr>
+             <th colspan="5">Detalle de cuotas</th>
+         </tr>
+         <tr>
+             <th bgcolor="green">PERIODO</th>
+             <th bgcolor="green">CONCEPTO</th>
+             <th bgcolor="green">IMPORTE</th>
+             <th bgcolor="green" colspan="2">DESCUENTO</th>
+         </tr>
+         <tr>
+             <td rowspan="3" style="text-align:center">01/03/19 - 01/04/19</td>
+             <td>Servicio de indentificacion de llamadas</td>
+             <td style="text-align:center">S/ 120.00</td>
+             <td colspan="2" style="text-align:center" >0</td>
+         </tr>  
+         <tr>
+            <td>Linea individual</td>
+            <td style="text-align:center">S/ 140.00</td>
+            <td colspan="2" style="text-align:center" >0</td>
+        </tr> 
+        <tr>
+            <td>Bono ciudad</td>
+            <td style="text-align:center">S/ 100.00</td>
+            <td colspan="2" style="text-align:center" >0</td>
+        </tr> 
+        <tr>
+            <td style="text-align:left" colspan="2">TOTAL:</td>
+            <th style="text-align:right" colspan="3" >S/. 360.00</th>
+        </tr>
+
+        <tr>
+            <th colspan="5">Detalle de consumos</th>
+        </tr>
+        <tr>
+            <th bgcolor="green">CONCEPTO</th>
+            <th bgcolor="green">LLAMADAS</th>
+            <th bgcolor="green">DURACION</th>
+            <th bgcolor="green">IMPORTE</th>
+            <th bgcolor="green" colspan="1">DESCUENTO</th>
+        </tr>
+        <tr>
+            <td>Llamada interacional</td>
+            <td style="text-align:center">23</td>
+            <td style="text-align:center" >10m 23s</td>
+            <td style="text-align:center" >S/. 130.00</td>
+            <td style="text-align:center" >0</td>
+        </tr>  
+        <tr>
+            <td>Llamada metropolitana</td>
+            <td style="text-align:center">23</td>
+            <td style="text-align:center" >10m 23s</td>
+            <td style="text-align:center" >S/. 35.00</td>
+            <td style="text-align:center" >0</td>
+       </tr> 
+       <tr>
+           <td style="text-align:left" colspan="2">TOTAL:</td>
+           <th style="text-align:right" colspan="3" >S/. 165.00</th>
+       </tr>
+     </tbody>
+     <!--fin de cuerpo de la tablasss-->
+    </table>
+</body>
+</html>

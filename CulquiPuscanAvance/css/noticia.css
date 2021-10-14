@@ -1,0 +1,35 @@
+h1{
+    color:rgb(22, 87, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+    color:rgb(22, 87, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+a{
+    color:rgb(7, 36, 99);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;  
+}
+#caja1{
+    height: 1000px;
+}
+#caja2{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+#caja3{
+    background-color: rgb(228, 118, 238);
+    clear: right;
+}
+#caja4{
+    background-color: hotpink;
+    width: 200px;
+    float: right;
+}
