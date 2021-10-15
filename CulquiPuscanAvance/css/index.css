@@ -1,3 +1,6 @@
+body{
+	background-color: rgb(99, 113, 233);
+}
 #perfil{
     float: left;
 }
@@ -30,7 +33,7 @@ section{
 }
 footer{
     background-color: rgb(193, 153, 229);
-    height: 230px;
+    height: 210px;
     clear: left;
     grid-area: my-footer;
 }

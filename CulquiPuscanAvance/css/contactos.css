@@ -1,6 +1,9 @@
 
+#iniciosesion{
+    background-color: transparent;
+}
 fieldset div{
-    background-color: bisque;
+    background-color: rgb(31, 19, 5);
 }
 button{
     background-color: rgb(120, 193, 241);
@@ -10,4 +13,10 @@ input{
 }
 fieldset input{
 vertical-align: middle;
+}
+.fbg p{
+    background-color: transparent;
+}
+header p{
+    color: black;
 }
