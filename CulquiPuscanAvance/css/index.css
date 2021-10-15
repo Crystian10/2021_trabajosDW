@@ -22,7 +22,7 @@ nav{
     width: 20%;
     grid-area: my-nav;
     float: left;
-    height: 400px;
+    height: auto;
 }
 section{
     background-color: cornflowerblue;
