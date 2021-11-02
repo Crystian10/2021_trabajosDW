@@ -1,0 +1,40 @@
+#contenedor{
+    width: 660px;
+    margin: auto;
+    background-color: floralwhite;
+    padding-left: 10;
+    font-family: calibri;
+}
+span{
+    width: 100px;
+    display: block;
+    float: left;
+    padding-left: 4px;
+}
+.nom{
+    background-color: darkgray;
+}
+.titu{
+    background-color: rgb(92, 216, 92);
+}
+li{
+    list-style: none;
+    margin-top: 1px;
+}
+ul{
+    margin: 0px;
+    padding-left: 0px;
+}
+.tituemail{
+    width: 340px;
+    background-color: rgb(92, 216, 92);
+}
+.nonemail{
+    background-color: darkgray;
+    width: 350px;
+}
+#aviso{
+    background-color: palevioletred;
+    width: 500px;
+    text-align: right;
+}
