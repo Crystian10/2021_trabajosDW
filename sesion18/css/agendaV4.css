@@ -1,5 +1,11 @@
+h3{
+    padding-left: 340px;
+}
+#nombre, #movil, #email, #direccion{
+    width: 300px;
+}
 #contenedor{
-    width: 700px;
+    width: 900px;
     margin: auto;
     padding-top: auto;
     background-color: floralwhite;
@@ -7,16 +13,22 @@
     font-family: calibri;
 }
 span{
-    width: 100px;
+    width: 160px;
     display: block;
     float: left;
-    padding-left: 4px;
+    padding-left: 30px;
 }
 .nom{
     background-color: darkgray;
+    width: 100px;
 }
 .titu{
-    background-color: rgb(92, 216, 92);
+    width: 100px;
+    background-color: rgb(233, 165, 64);
+}
+.titudire{
+    width: 280px;
+    background-color: rgb(233, 165, 64);
 }
 li{
     list-style: none;
@@ -27,12 +39,16 @@ ul{
     padding-left: 0px;
 }
 .tituemail{
-    width: 350px;
-    background-color: rgb(92, 216, 92);
+    width: 280px;
+    background-color: rgb(233, 165, 64);
 }
 .nomemail{
     background-color: darkgray;
-    width: 350px;
+    width: 280px;
+}
+.nomdire{
+    background-color: darkgray;
+    width: 280px;
 }
 #aviso{
     background-color: floralwhite;

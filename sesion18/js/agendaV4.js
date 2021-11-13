@@ -2,10 +2,12 @@ function guardarDato(){
     var nombre = document.getElementById("nombre").value; /* crear variable y guardarlo */
     var movil = document.getElementById("movil").value;
     var email = document.getElementById("email").value;
-    
+    var direccion = document.getElementById("direccion").value;
+
     const datos = { /*guarda dos subvariables*/
         'movil': movil,
         'email': email,
+        'direccion': direccion,
     }
 
     localStorage.setItem(nombre, JSON.stringify(datos)); /* guardar datos, (JSON)unir variables y guardar como cadena de texto*/
@@ -13,6 +15,7 @@ function guardarDato(){
     document.getElementById("nombre").value=""; /* limpiar el txt*/
     document.getElementById("movil").value="";
     document.getElementById("email").value="";
+    document.getElementById("direccion").value="";
 
     actualizarDatos();
 }
@@ -26,6 +29,7 @@ function recuperarDato(){
 
     document.getElementById("movil").value = datos.movil; /* se saca de datos, y se alamena en cada uno*/
     document.getElementById("email").value = datos.email;
+    document.getElementById("direccion").value = datos.direccion;
 
 }                                                                                                                                                                                                                                                                                       
 
@@ -37,6 +41,7 @@ function eliminarDato(){
     document.getElementById("nombre").value=""; /* limpiar el txt*/
     document.getElementById("movil").value="";
     document.getElementById("email").value="";
+    document.getElementById("direccion").value="";
 }                            
 
 function eliminarTodo(){
@@ -58,6 +63,7 @@ function actualizarDatos(){
             registro += `<li> <span class="nom"> ${key} </span> 
                               <span class="nom"> ${datos.movil} </span> 
                               <span class="nomemail"> ${datos.email} </span> 
+                              <span class="nomdire"> ${datos.direccion} </span> 
                         </li><br>`; 
         }   
     }

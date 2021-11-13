@@ -8,6 +8,10 @@
     <title>Document</title>
 </head>
 <body onload="actualizarDatos()" >
+    <p class="entrada">    
+            En este formulario podras registrar, guardar, eliminar y limpiar todos los datos personas que ingresas
+    </p>
+
     <div id="contenedor">
         <header>
             <h3>Mi agenda de contactos</h3>
@@ -17,9 +21,9 @@
             <span>Nombre:</span>
             <input type="text" placeholder="Nombre" id="nombre" onkeypress="return soloLetras(event)" ><br><span id="aviso" ></span><br>
             <span>Num celular: </span>
-            <input type="text" placeholder="Movil" id="movil"><br><br>
+            <input type="text" placeholder="Movil" id="movil" onkeypress="return soloNumeros(event) " ><br><span id="aviso" ></span> <br>
             <span>Email: </span>
-            <input type="text" placeholder="Email" id="Email">
+            <input type="email" placeholder="email" id="email">
         </form>
         <hr>
         <div>

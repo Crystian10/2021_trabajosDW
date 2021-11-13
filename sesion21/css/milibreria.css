@@ -1,0 +1,6 @@
+#contenedor{
+    background-color: aquamarine;
+}
+div[class="col"]{
+    border: black 1px solid;
+}
