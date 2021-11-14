@@ -1,0 +1,56 @@
+.grid { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px; /*tamaño del cuadro del juego*/
+    height: 560px;
+    border: solid black;
+}
+  
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: white;   
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+.empty{
+    border: 5px solid black;
+}
+
+
+.wall {
+    background-color: rgb(8, 8, 197);
+}
+
+.power-pellet {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.blinky {
+    background-color: rgb(243, 22, 22);
+}
+
+.pinky {
+    background-color: rgb(192, 106, 120);
+}
+
+.inky {
+    background-color: rgb(7, 165, 165);
+}
+
+.clyde {
+    background-color: orange;     
+}
+
+.pac-man {
+    background-color: rgb(219, 219, 10);
+    border-radius: 10px;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}

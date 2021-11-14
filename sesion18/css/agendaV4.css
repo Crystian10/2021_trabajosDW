@@ -8,7 +8,7 @@ h3{
     width: 900px;
     margin: auto;
     padding-top: auto;
-    background-color: floralwhite;
+    background-color: rgb(245, 224, 181);
     padding-left: 10;
     font-family: calibri;
 }
@@ -24,11 +24,11 @@ span{
 }
 .titu{
     width: 100px;
-    background-color: rgb(233, 165, 64);
+    background-color: rgb(218, 136, 15);
 }
 .titudire{
-    width: 280px;
-    background-color: rgb(233, 165, 64);
+    width: 300px;
+    background-color: rgb(218, 136, 15);
 }
 li{
     list-style: none;
@@ -40,7 +40,7 @@ ul{
 }
 .tituemail{
     width: 280px;
-    background-color: rgb(233, 165, 64);
+    background-color: rgb(218, 136, 15);
 }
 .nomemail{
     background-color: darkgray;

@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 $('.promo-code-cta').click(function() {
 
-  promoCode = $('#promo-code').val();
+promoCode = $('#promo-code').val();
 
   if (promoCode == '10off' || promoCode == '10OFF') {
     //If promoPrice has no value, set it as 10 for the 10OFF promocode
