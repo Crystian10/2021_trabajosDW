@@ -1,10 +1,11 @@
 html, body{
     height: 100%;
 }
+
 #cover{
-    background: #222 url(../img/perrito.png) center no-repeat;
+    background: #222 url(../img/front-view-of-beautiful-dog-with-copy-space.jpg) center no-repeat;
     background-size: 100%;
-    color: rgb(223, 248, 80);
+    color:black;
     height: 100%;
     text-align: center;
     display: flex;
