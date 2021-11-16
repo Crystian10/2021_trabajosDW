@@ -1,0 +1,17 @@
+.container .row>div{
+    background-color: whitesmoke;
+    border: solid transparent;
+    padding: 1%;
+}
+#log{
+    width: 130px; 
+    height: 120px;
+    float: left;
+}
+h5,p{
+    color: black;
+    font-size: 25px;
+}
+p{
+    font-size: 14px;
+  }
