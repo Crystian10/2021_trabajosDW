@@ -1,3 +1,4 @@
+
 div{
     background-color: violet;
     color: white;
@@ -5,26 +6,79 @@ div{
     position: absolute;
     border-radius: 2rem 2rem 0 0;
     animation-name: animar;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 @keyframes animar{
     0%{
-        left: 0;
-        top: 0; }
+        left: 10rem;
+        top: 7rem; }
     10% {
-        left: 5rem;
-        top: 0rem;
+        left: 10rem;
+        top: 1rem;
+        color: black; }
+    20%{
+        top: 33rem;
+        left: 10rem;
         color: black; }
     30%{
-        top: 5rem;
-        left: 5rem;
-        color: orangered; }
-    60%{
-        top: 5rem;
-        left: 0;
+        top: 33rem;
+        left: 34rem;
+        color: black; }
+    40%{
+        top: 7rem;
+        left: 34rem;
+        color: black; }
+    44%{
+        top: 7rem;
+        left: 42rem;
+        color: black; }
+    49%{
+        top: 2rem;
+        left: 42rem;
+        color: black; }
+    53%{
+        top: 2rem;
+        left: 34rem;
+        color: black; }
+    57%{
+        top: 7rem;
+        left: 34rem;
+        color: black; }
+    61%{
+        top: 7rem;
+        left: 29rem;
+        color: black; }
+    65%{
+        top: 11rem;
+        left: 29rem;
+        color: black; }
+    69%{
+        top: 11rem;
+        left: 24rem;
+        color: black; }
+    73%{
+        top: 16rem;
+        left: 24rem;
+        color: black; }
+    77%{
+        top: 16rem;
+        left: 20rem;
+        color: black; }
+    81%{
+        top: 11rem;
+        left: 20rem;
+        color: black; }
+    85%{
+        top: 11rem;
+        left: 15rem;
+        color: black; }
+    90%{
+        top: 7rem;
+        left: 15rem;
         color: black; }
     100%{
-        top: 0;
-        left: 0; }
+        left: 10rem;
+        top: 7rem;
+        color: black; }
 }

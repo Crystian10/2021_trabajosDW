@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+}
+#cover{
+    background: #222 url(../img/perrito.png) center no-repeat;
+    background-size: 100%;
+    color: rgb(223, 248, 80);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#lead{
+    color: rgb(235, 37, 37);
+}
+
+#cover-texto{
+    width: 100%;
+}
+.btn{
+    color: white;
+}
+.btn-primary{
+    background-color:  green;
+}
