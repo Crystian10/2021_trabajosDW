@@ -82,7 +82,7 @@
     max-width: 40px;
     border-radius: 20px;
   }
-  
+ 
   .shopping-cart-quantity-input {
     max-width: 45px;
     border: 1px solid #ccc;
@@ -93,17 +93,33 @@
   
   .shopping-cart-total {
     min-height: 96px;
-    width: 80%; 
-    height: 4%;
+    width: 550px; 
+    height: 1%;
   }
 
+.card{
+  float: right;
+  width: 550px;
+  height: 100px;
+}
+
+.card-header{
+    background: rgb(49, 49, 49);
+    color: white;
+}
+
   footer{
-    width: 1050px;
+    width: 1250px;
   }
   .pie{
-    width: 1050px;
+    width: 1250px;
   }
 
   p{
     font-size: 14px;
   }
+
+#bttn{
+  float: left;
+}
+
