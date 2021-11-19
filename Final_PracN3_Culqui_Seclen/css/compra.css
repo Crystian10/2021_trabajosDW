@@ -95,17 +95,19 @@
     min-height: 96px;
     width: 550px; 
     height: 1%;
+    font-weight: bold;
   }
 
 .card{
   float: right;
-  width: 550px;
+  width: 500px;
   height: 100px;
 }
 
 .card-header{
     background: rgb(49, 49, 49);
     color: white;
+
 }
 
   footer{
@@ -123,3 +125,45 @@
   float: left;
 }
 
+
+/* reponsivo------*/
+/* TABLET */
+ @media(max-width: 1200px){
+  footer{
+      width: 110%;
+    }
+  .pie{
+      width: auto;
+  }
+  #car{
+    width: 700px; 
+    height: 5px;
+  }
+  .container{
+    width: 700px; 
+  }
+  
+  #vacio{
+    height: 340px;
+  }
+}
+
+/*MOVIL */
+@media(max-width:600px){
+  footer{
+      width: 110%;
+    }
+  .pie{
+      width: auto;
+  }
+  #car{
+    width: 100%; 
+    height: 5px;
+  }
+  .container{
+    width: 450px; 
+  }
+  #vacio{
+    height: 330px;
+  }
+}

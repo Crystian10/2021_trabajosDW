@@ -1,0 +1,75 @@
+h3{
+    padding-left: 340px;
+}
+#nombre, #movil, #email, #direccion{
+    width: 300px;
+}
+#contenedor{
+    width: 900px;
+    margin: auto;
+    padding-top: auto;
+    background-color: rgb(245, 224, 181);
+    padding-left: 10;
+    font-family: calibri;
+}
+span{
+    width: 160px;
+    display: block;
+    float: left;
+    padding-left: 30px;
+}
+.nom{
+    background-color: darkgray;
+    width: 100px;
+}
+.titu{
+    width: 100px;
+    background-color: rgb(218, 136, 15);
+}
+.titudire{
+    width: 300px;
+    background-color: rgb(218, 136, 15);
+}
+li{
+    list-style: none;
+    margin-top: 1px;
+}
+ul{
+    margin: 0px;
+    padding-left: 0px;
+}
+.tituemail{
+    width: 280px;
+    background-color: rgb(218, 136, 15);
+}
+.nomemail{
+    background-color: darkgray;
+    width: 280px;
+}
+.nomdire{
+    background-color: darkgray;
+    width: 280px;
+}
+#aviso{
+    background-color: floralwhite;
+    width: 500px;
+    text-align: right;
+    font-family: Verdana, Tahoma;
+}
+.entrada{
+    animation-duration: 13s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes slidein {
+    from{
+        margin-left: 25%;
+        width: 100%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

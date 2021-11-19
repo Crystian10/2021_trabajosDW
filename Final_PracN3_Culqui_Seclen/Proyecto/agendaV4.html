@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/agendaV4.css">
+    <title>Version 4</title>
+</head>
+<body onload="actualizarDatos()" >
+    <p class="entrada">    
+            En este formulario podras registrar, guardar, eliminar y limpiar todos 
+            tus datos personales que vas ingresando 
+    </p>
+
+    <div id="contenedor">
+        <header>
+            <h3>Mi agenda de contactos</h3>
+            <hr>
+        </header>
+        <form>
+            <span>Nombre:</span>
+            <input type="text" placeholder="Nombre" id="nombre" onkeypress="return soloLetras(event)" ><br><span id="aviso" ></span><br>
+            <span>Numero celular: </span>
+            <input type="text" placeholder="Movil" id="movil" onkeypress="return soloNumeros(event) " ><br><span id="aviso" ></span> <br>
+            <span>Email: </span>
+            <input type="email" placeholder="email" id="email"> <br><br>
+            <span>Direccion: </span>
+            <input type="direccion" placeholder="direccion" id="direccion">
+        </form>
+        <hr>
+        <div>
+            <button type="button" onclick="guardarDato()" >Guardar datos</button>
+            <button type="button" onclick="recuperarDato()">Recuperar datos</button>
+            <button type="button" onclick="eliminarDato()">Eliminar datos</button>
+            <button type="button" onclick="eliminarTodo()">Eliminar todos los datos</button>
+        </div>
+        <hr>
+        <span class="titu" >Nombre</span> <span class="titu">Celular</span> 
+        <span class="tituemail" >email</span> <span class="titudire" >direccion</span><br>
+        <ul id="contactos"></ul>
+    </div>
+    <script type="text/javascript" src="../js/agendaV4.js"></script>
+</body>
+</html>

@@ -1,3 +1,12 @@
+html, body{
+    background-color: rgb(247, 171, 101);
+}
+.nav-tabs{
+    background-color: rgb(175, 201, 31);
+}
+.enca{
+    background-color: rgb(62, 209, 202);
+}
 .container .row>div{
     background-color: whitesmoke;
     border: solid transparent;
