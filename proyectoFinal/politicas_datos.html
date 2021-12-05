@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/politica.css">
+    <title>Politicas de Datos Personales</title>
+</head>
+
+<body>
+      
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+
+      <div id="imagen__logo" class="navbar-brand mx-auto">
+        <a href="inicio.html"><img src="img/LOGO BARTUREN1.png" alt=""></a>
+      </div>
+
+      <form class="d-flex form-group has-search col-md-5 autocomplete" autocomplete="off" action="">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input id="buscador" class="form-control" type="search" placeholder="Busca tus productos" aria-label="Search">
+      </form>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto align-items-center">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              País
+            </a>
+            <ul class="dropdown-menu fade-down">
+              <li><a class="dropdown-item" href="#">Perú</a></li>
+              <li><a class="dropdown-item" href="#">Chile</a></li>
+              <li><a class="dropdown-item" href="#">Ecuador</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="#">Carrito <span><i class="fas fa-shopping-cart"></i></span></a>
+          </li>
+
+          <li class="btn-group">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Mi Cuenta <span><i class="fas fa-user"></i></span></a>
+            </a>
+            <ul id="myCuenta" class="dropdown-menu dropdown-menu-end fade-down">
+              <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+              <li><a class="dropdown-item" href="#">Crear cuenta</a></li>
+              <li><a class="dropdown-item" href="#">Restaurar contraseña</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample"
+        aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+
+          <li class="nav-item dropdown px-4">
+
+            <a id="idopenbtn" class="nav-link dropdown-toggle" onclick="openNav()" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasExample"
+              aria-expanded="false">
+              <span class="navbar-toggler-icon"></span> Todas las categorías
+            </a>
+
+          </li>
+
+          <li class="nav-item  px-4">
+            <a class="nav-link" href="#">Ofertas del día</a>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="#">Nuestras tiendas</a>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="#">Productos más vendidos</a>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="#">Prevenciones contra el Covid 19</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mySidebar" class="sidebar">
+
+    <div class="offcanvas-header border-bottom">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div><br>
+
+    <ul class="list-unstyled">
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-01">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-01"></i>Frutas y Verduras
+        </a>
+
+        <div class="collapse" id="categ-01">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-02">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-02"></i>Lácteos y Huevos
+        </a>
+
+        <div class="collapse" id="categ-02">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-03">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-03"></i>Abarrotes
+        </a>
+
+        <div class="collapse" id="categ-03">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">Arroz</a></li>
+            <li><a href="#" class="rounded">Aceite</a></li>
+            <li><a href="#" class="rounded">Fideos</a></li>
+            <li><a href="#" class="rounded">Conservas</a></li>
+            <li><a href="#" class="rounded">Chocolates</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-04">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-04"></i>Panadería y Pastelería
+        </a>
+
+        <div class="collapse" id="categ-04">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-05">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-05"></i>Carnes
+        </a>
+
+        <div class="collapse" id="categ-05">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-06">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-06"></i>Comidas Rápidas
+        </a>
+
+        <div class="collapse" id="categ-06">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-07">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-07"></i>Bebidas
+        </a>
+
+        <div class="collapse" id="categ-07">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-08">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-08"></i>Limpieza
+        </a>
+
+        <div class="collapse" id="categ-08">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-09">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-09"></i>Tecnología
+        </a>
+
+        <div class="collapse" id="categ-09">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-10">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-10"></i>Aseo Personal
+        </a>
+
+        <div class="collapse" id="categ-10">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-11">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-11"></i>Alimentos para Mascotas
+        </a>
+
+        <div class="collapse" id="categ-11">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+    </ul>
+  </div>
+    <section><br>
+        <div class="container">
+            <div class="row  text-center" id="barra_opciones"><br>
+                <div class="col-sm" id="opcion">
+                    <a role="button" class="btn text-white" href="politicas_datos.html">Políticas de datos personales</a>
+                </div>
+                <div class="col-sm" id="opcion">
+                <a role="button" class="btn text-white" href="codigos_promociones.html">Condiciones de promociones</a>
+                </div>
+                <div class="col-sm" id="opcion">
+                    <a role="button" class="btn text-white" href="terminos_condiciones.html">Terminos y condiciones</a>
+                </div><br>
+            </div><br>
+            <h3>Politicas de Datos Personales</h3>
+            <div class="text-center">
+                <img src="img/politica_datos.jpg" alt="">
+            </div>
+            <div class="col"><br>
+                <div class="row" id="descripcion">
+                    <h6>¿Cuál es la información que recopilamos?</h6>
+                    <p>Información de Identificación Personal (IIP) que recibamos, entre otros, mediante los formularios
+                        de contacto, suscripción, registro u otros que estén en la página web.
+                        La IIP incluye información de identificación, información de contacto e información técnico,
+                        entre otros datos como; Nombres y apellidos, además de correo electrónico
+
+                    </p>
+                </div><br>
+                <div class="row" id="descripcion">
+                    <h6>¿Cómo usamos esta información?</h6>
+                    <p>Los datos descritos en el punto anterior se utilizan con objetivos de difusión de nuestras
+                        actividades para la compra de productos,
+                        además, parte de los datos se utilizan como referencia para optimizar la pertinencia de la
+                        compra, para garantizar la integridad y confidencialidad de sus datos.
+                    </p>
+                </div><br>
+                <div class="row" id="descripcion">
+                    <h6>¿Su información será compartida con alguien?</h6>
+                    <p>Se podrán generar y compartir reportes o resúmenes a partir de los datos recopilados, entre
+                        otros, las páginas más visitadas o el número de registrados a un evento. Al ser resúmenes, estos
+                        reportes no pueden utilizarse para rastrear a una persona en particular.
+                    </p>
+                </div> <br>
+                <div class="row" id="descripcion">
+                    <h6>¿Utilizamos cookies y otras tecnologías de seguimiento?</h6>
+                    <p>Las cookies son pequeños archivos de datos que se envían a su navegador o software relacionado desde un servidor web 
+                        y se almacenan en su computadora o dispositivo. Las cookies a menudo incluyen un identificador único anónimo y rastrean y almacenan sus preferencias de usuarios mientras usan el sitio web, así como información técnica sobre su uso del sitio web.
+                    </p>
+                </div><br>
+                <div class="row" id="descripcion">
+                    <h6>¿Cómo mantenemos su información segura?</h6>
+                    <p>Protegemos la seguridad y la integridad de la IIP que recopilamos mediante la implementación de procedimientos físicos, electrónicos y administrativos para salvaguardar y proteger la información contra pérdida, uso indebido, acceso no autorizado o divulgación,
+                         alteración o destrucción. Sin embargo, debido a la naturaleza inherente del internet como un vehículo de comunicación global abierto, no podemos garantizar que cualquier información, ya sea durante la transmisión a través de Internet, esté absolutamente a salvo de la intrusión otros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br><br>
+
+     <!-- FOOTER -->
+
+  <footer>
+    <div class="container-fluid text-white" id="footer"><br>
+      <div class="row">
+        <div class="col">
+          <strong>Comunicate con nosotros</strong>
+          <li>Cajamarca: 956345432</li>
+          <li>Provincia: 954235674</li><br>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.077746730167!2d-79.86522188540813!3d-6.760374295113184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceeeffd190ddd%3A0xce387ae6229aa09e!2sUSAT!5e0!3m2!1ses-419!2spe!4v1637965370242!5m2!1ses-419!2spe"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="col">
+          <strong>Nosotros</strong>
+          <ul>
+            <li href="index.html" role="button">¿Quiénes somos?</li>
+            <li href="index.html" role="button">Misión y visión</li>
+            <li href="index.html" role="button">Responsabilidad social</li>
+            <li href="index.html" role="button">Libro de reclamaciones</li>
+          </ul>
+        </div>
+        <div class="col">
+          <strong>Te informamos</strong>
+          <ul>
+            <li href="index.html" role="button">Vende con nosotros</li>
+          </ul>
+        </div>
+        <div class="col">
+          <strong>Atención al cliente</strong>
+          <ul>
+            <li href="index.html" role="button">Tutorial de compras</li>
+            <li href="index.html" role="button">Preguntas frecuentes</li>
+            <li href="index.html" role="button">Cambios y devoluciones</li>
+          </ul>
+        </div>
+        <div class="col">
+          <strong>Politicas y condiciones</strong>
+          <li href="index.html" role="button">Politica de datos personales</li>
+          <li href="index.html" role="button">Condiciones de promociones</li>
+          <li href="index.html" role="button">Términos y condiciones</li>
+
+        </div>
+      </div>
+      <div class="row" id="iconos">
+        <div class="col text-center">
+          <strong>Siguenos en</strong>
+          <div>
+            <i href="" class="fab fa-facebook-f"></i>
+            <i href="" class="fab fa-instagram "></i>
+            <i href="" class="fab fa-twitter"></i>
+            <i href="" class="fab fa-youtube "></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="JS/inicio.js"></script>
+</body>
+
+</html>
