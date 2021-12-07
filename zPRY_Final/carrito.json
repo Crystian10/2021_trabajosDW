@@ -1,0 +1,48 @@
+[
+    {
+      "precio": 25.00, 
+      "id": 1,
+      "title" :"ARROZ",
+      "concepto": "Arroz Paisana extra superior. Bolsa de 5kg.",
+      "thumbnailUrl": "img/arroz.png",
+      "url":"compra_producto1.html"
+    },
+    {
+      "id": 2,
+      "title": "FIDEO",
+      "precio": 2.50,
+      "concepto": "Fideo Nicolini spaguetti. Bolsa 1kg.",
+      "thumbnailUrl": "img/fideo.png",
+      "url":"compra_producto3.html"
+    },
+    {
+      "precio": 54.00,
+      "id": 3,
+      "title": "ACEITE",
+      "concepto": "Aceite Oil premium de 5Ltros.",
+      "thumbnailUrl": "img/Aceite.png",
+      "url":"compra_producto2.html"
+      
+    },
+    {
+      "precio": 300,
+      "id": 4,
+      "title": "AUDIFONOS",
+      "concepto": "Audifonos PHILPIS SHB2515WT",
+      "thumbnailUrl": "img/audifonos.png"
+    },
+    {
+      "precio": 109,
+      "id": 5,
+      "title": "ASPIRADORA",
+      "concepto": "Aspiradora BLACKLINE SVC-002",
+      "thumbnailUrl": "img/aspiradora.png"
+    },
+    {
+      "precio": 13.5,
+      "id": 6,
+      "title": "AZUCAR",
+      "concepto": "Azúcar Rubia BELL´S Bolsa de 5kg.",
+      "thumbnailUrl": "img/azucar.png" 
+    }
+  ]
