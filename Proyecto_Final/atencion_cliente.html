@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/atencion_cliente.css">
+  <link rel="stylesheet" href="CSS/Mi_cuenta_ICR.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Atencion al cliente</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+
+      <div id="imagen__logo" class="navbar-brand mx-auto">
+        <a href="index.html"><img src="IMG/logobarturen.png" alt=""></a>
+      </div>
+
+      <form class="d-flex form-group has-search col-md-5 autocomplete" autocomplete="off" action="">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input id="buscador" class="form-control" type="search" placeholder="Busca tus productos" aria-label="Search">
+      </form>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto align-items-center">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              País
+            </a>
+            <ul class="dropdown-menu fade-down">
+              <li><a class="dropdown-item" href="#">Perú</a></li>
+              <li><a class="dropdown-item" href="#">Chile</a></li>
+              <li><a class="dropdown-item" href="#">Ecuador</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="carrito.html">Carrito <span><i class="fas fa-shopping-cart"></i></span></a>
+          </li>
+
+          <li class="btn-group">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Mi Cuenta <span><i class="fas fa-user"></i></span></a>
+            </a>
+            <ul id="myCuenta" class="dropdown-menu dropdown-menu-end fade-down">
+              <li><a class="dropdown-item" data-bs-toggle="modal" href="#Iniciarsesion">Iniciar sesión</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" href="#Crearcuenta">Crear cuenta</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" href="#Restaurarcontraseña">Restaurar contraseña</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="Iniciarsesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><h5 class="modal-title" id="exampleModalLabell">INICIAR SESIÓN</h5></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form >
+            <span id="Ingresar" >Correo eléctronico</span>
+            <input type="text" placeholder="example@gmail.con" id="correo_"><br><br>
+            <span id="Ingresar" >Contraseña </span>
+            <input type="text"  placeholder="" id="correo_"></span>
+            <a id="olvide-contraseña" class="nav-link" href="#Restaurarcontraseña">Olvide mi contraseña</a> <br>
+            <div class="d-grid gap-2">
+              <button id="iniciar_sesion_segura" class="btn btn-danger" type="button">Iniciar sesion segura</button><br>
+            </div>
+            <h6 id="ingresa-con">O ingresa con</h6> <br>
+            <div class="botones-adicionales">
+              <button type="button" id="b-facebook" class="btn btn-secondary btn-sm">Facebook</button>
+              <button type="button" id="b-google" class="btn btn-secondary btn-sm " >Google</button>
+              <button type="button" id="b-apple" class="btn btn-secondary btn-sm">Apple</button><br>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="bt-cerrar" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Crearcuenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><h5 class="modal-title" id="exampleModalLabell">CREAR CUENTA</h5></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> 
+        <div class="modal-body">
+          <form >
+            <span id="Ingresar" >Nombres</span>
+            <input type="text"  id="correo_"><br><br>
+            <span id="Ingresar" >Apellidos</span>
+            <input type="text"  id="correo_"><br><br>
+            <span id="Ingresar" >Correo eléctronico</span>
+            <input type="text" placeholder="example@gmail.con" id="correo_"><br><br>
+            <span id="Ingresar" >Contraseña </span>
+            <input type="text"  placeholder="" id="Contraseña_"></span> <br>
+            <a id="olvide-contraseña">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+              <label class="form-check-label" for="flexCheckDefault">He leido terminos y condiciones</label> <br><br>
+            </a>
+            
+            <div class="d-grid gap-2">
+              <button id="iniciar_sesion_segura" class="btn btn-danger" type="button">Crear cuenta segura</button><br>
+            </div>
+            <h6 id="ingresa-con">O ingresa con</h6> <br>
+            <div class="botones-adicionales">
+              <button type="button" id="b-facebook" class="btn btn-secondary btn-sm">Facebook</button>
+              <button type="button" id="b-google" class="btn btn-secondary btn-sm " >Google</button>
+              <button type="button" id="b-apple" class="btn btn-secondary btn-sm">Apple</button><br>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="bt-cerrar" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Restaurarcontraseña" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabell">RESTAURAR CONTRASEÑA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <span id="Ingresar" >Correo electronico</span>
+            <input type="text" placeholder="example@gmail.con" id="correo_"><br> <br>
+            <div class="b-enviar"><button type="button" id="b-enviar" class="btn btn-secondary btn-sm">Enviar</button></div><br>
+            <span id="Ingresar" >Ingresar codigo</span> 
+            <input type="text"  id="correo_"><br> <br>
+            <div class="b-enviar"><button type="button" id="b-enviar" class="btn btn-secondary btn-sm">Confirmar</button></div><br>
+            <span id="Ingresar" >Nueva contraseña</span>
+            <input type="text"  id="correo_"><br><br>
+            <span id="Ingresar" >Confirmar contraseña </span>
+            <input type="text"  placeholder="" id="Contraseña_"></span> <br><br>
+
+            <a id="olvide-contraseña">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+              <label class="form-check-label" for="flexCheckDefault">No soy un robot</label> <br><br>
+            </a>      
+            <div class="d-grid gap-2">
+              <button id="iniciar_sesion_segura" class="btn btn-danger" type="button">Restablecer contraseña</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="bt-cerrar" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample"
+        aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+
+          <li class="nav-item dropdown px-4">
+
+            <a id="idopenbtn" class="nav-link dropdown-toggle" onclick="openNav()" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasExample"
+              aria-expanded="false">
+              <span class="navbar-toggler-icon"></span> Todas las categorías
+            </a>
+
+          </li>
+
+          <li class="nav-item  px-4">
+            <a class="nav-link" href="ofertas_dia.html">Ofertas del día</a>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="sucursales.html">Nuestras tiendas</a>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="prodmasvend.html">Productos más vendidos</a>
+          </li>
+
+          <li class="nav-item px-4">
+            <a class="nav-link" href="prevenciones_covid.html">Prevenciones contra el Covid 19</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mySidebar" class="sidebar">
+
+    <div class="offcanvas-header border-bottom">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div><br>
+
+    <ul class="list-unstyled">
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-01">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-01"></i>Frutas y Verduras
+        </a>
+
+        <div class="collapse" id="categ-01">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-02">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-02"></i>Lácteos y Huevos
+        </a>
+
+        <div class="collapse" id="categ-02">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-03">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-03"></i>Abarrotes
+        </a>
+
+        <div class="collapse" id="categ-03">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="compra_producto1.html" class="rounded">Arroz</a></li>
+            <li><a href="compra_producto2.html" class="rounded">Aceite</a></li>
+            <li><a href="compra_producto3.html" class="rounded">Fideos</a></li>
+            <li><a href="#" class="rounded">Conservas</a></li>
+            <li><a href="#" class="rounded">Chocolates</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-04">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-04"></i>Panadería y Pastelería
+        </a>
+
+        <div class="collapse" id="categ-04">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-05">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-05"></i>Carnes
+        </a>
+
+        <div class="collapse" id="categ-05">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-06">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-06"></i>Comidas Rápidas
+        </a>
+
+        <div class="collapse" id="categ-06">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-07">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-07"></i>Bebidas
+        </a>
+
+        <div class="collapse" id="categ-07">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-08">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-08"></i>Limpieza
+        </a>
+
+        <div class="collapse" id="categ-08">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-09">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-09"></i>Tecnología
+        </a>
+
+        <div class="collapse" id="categ-09">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-10">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-10"></i>Aseo Personal
+        </a>
+
+        <div class="collapse" id="categ-10">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li>
+
+        <a href="#" class="categoria" data-bs-toggle="collapse" data-bs-target="#categ-11">
+          <i class="fas fa-chevron-circle-down fa-rotate-270" data-bs-toggle="collapse"
+            data-bs-target="#categ-11"></i>Alimentos para Mascotas
+        </a>
+
+        <div class="collapse" id="categ-11">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-2">
+            <li><a href="#" class="rounded">01</a></li>
+            <li><a href="#" class="rounded">02</a></li>
+            <li><a href="#" class="rounded">03</a></li>
+          </ul>
+        </div>
+
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!-- SECTION -->
+
+  <section><br>
+    <h1 class="text-center">ATENCIÓN AL CLIENTE</h1><br>
+
+    <!-- <div class="container">
+      <ul class="row text-center" id="pills-tab" role="tablist">
+        <div class="nav-item col-sm" role="presentation">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tutorial de Compras</a>
+        </div>
+        <div class="col-sm" role="presentation">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Preguntas Frecuentes</a>
+        </div>
+        <div class="col-sm" role="presentation">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Cambios y Devoluciones</a>
+        </div>
+      </ul>
+    </div>
+
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tutorial de Compras</a>
+        </div>
+        <div class="col-sm">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tutorial de Compras</a>
+        </div>
+        <div class="col-sm">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tutorial de Compras</a>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+
+      <ul class="nav nav-pills mb-5 row-col-2 justify-content-center text-center" id="pills-tab" role="tablist">
+        <li class="nav-item col-sm px-3" role="presentation">
+          <a class="btn btn-danger" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+            role="tab" aria-controls="pills-home" aria-selected="true">Tutorial de Compras</a>
+        </li>
+        <li class="nav-item col-sm px-3" role="presentation">
+          <a class="btn btn-danger" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Preguntas Frecuentes</a>
+        </li>
+        <li class="nav-item col-sm px-3" role="presentation">
+          <a class="btn btn-danger" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cambios y Devoluciones</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <h4>Tutorial de Compras</h4><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 p-4 border border-2 text-center">
+              <img src="IMG/01.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12 p-4 border border-2">
+              El cliente accede a la sección de categorías, en donde inmediatamente después puede desplegar la lista de
+              productos y elegir el que desea.
+            </div>
+          </div>
+        </div><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 p-4 border border-2 text-center">
+              <img src="IMG/02.png" alt="">
+            </div><br>
+            <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12 p-4 border border-2">
+              Una vez que se encuentre en la lista de productos pordrá elegir los que desea adquirir e irlos agregando
+              al carrito.
+            </div>
+          </div>
+        </div><br>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 p-4 border border-2 text-center">
+              <img src="IMG/03.png" alt="">
+            </div><br>
+            <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12 p-4 border border-2">
+              En la página de carrito de compras, podrá modificar la cantidad de productos que desea y también eliminar
+              aquellos que ya no va a comprar. Luego puede proseguir con el pago.
+            </div>
+          </div>
+        </div><br>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 p-4 border border-2 text-center">
+              <img src="IMG/04.png" alt="">
+            </div><br>
+            <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12 p-4 border border-2">
+              Por último, debera hacer el llenado de sus datos personales, la dirección de envío y el método de pago. En
+              este apartado también podrá ver un resumen del monto total de la compra.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tab-pane fade container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <h4>Preguntas frecuentes</h4><br>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Porqué comprar en MiniMarket Barturen?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Porque puedes acceder cómodamente a los mismos productos del local, desde
+                cualquier lugar y en el momento que tú decidas. Además de recibir un servicio de calidad, puntual y
+                personalizado, ahorras tiempo y dinero al acceder a las ofertas y promociones exclusivas. También, hemos
+                diseñado el sitio con información clara, de modo de lograr una compra fécil y rápida.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Qué productos puedo comprar en MiniMarket Barturen?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Actualmente, contamos con una amplia variedad de artículos activos online
+                sujetos a disponibilidad. Para nosotros, es muy importante saber cuáles son tus necesidades en cada
+                pedido, de modo de cumplir cada vez mejor con tus expectativas.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                ¿Qué sucede si no pudo realizar correctamente una compra?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Contácatanos a nuestros servicios móviles, ya que siemore nos encontramos
+                a disposición, preparado para aclarar todas tus dudas y entregar un servicio personalizado.</div>
+            </div>
+          </div>
+
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                ¿Es seguro ingresar los datos de mi tarjeta de crédito?
+              </button>
+            </h2>
+            <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Sí, ya que protegemos la confidencialidad de los datos de tu tarjeta a través
+                de la comunicación constante entre el sitio de web y las entidades emisoras.</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                ¿Qué necesito para ver el Sitio Web?
+              </button>
+            </h2>
+            <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Sólo es necesario tener cualquiera de los navegadores disponibles en mercado,
+                como Explorer 7, Mozilla Firefox, Safari o Google Chrome. Nuestra página resposiva cuenta con una
+                excelente
+                resolución, que te permitirá encontrar tus productos de manera rápida y cómoda, teniendo la mejor
+                experiencia de compra.</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                ¿Cuál es su horario de atención de su tienda física?
+              </button>
+            </h2>
+            <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Atendemos de Lunes a Sábado en nuestra sede, desde las 7:00am hasta las
+                10:00pm. Así que no dudes en visitarnos</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                ¿Garantía de Satisfacción?
+              </button>
+            </h2>
+            <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">En MiniMarket Barturen queremos cumplir y superar tus expectativas, por lo que
+                estamos en un proceso de mejora continua que busca entregar un servicio personalizado.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="tab-pane fade container" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <h4>Cambios y Devoluciones</h4><br>
+
+        <div id="cambios_devoluciones" class="container p-5 border border-1">
+
+          <p><img id="img_camb_dev" class="img-fluid" src="IMG/camb_dev.jpg" alt="">
+            Todo cambio o devolución de productos comprados en tienda física se efectuará en la misma tienda donde se
+            realizó la compra.
+
+            En caso de los pedidos realizados por la página web se adiciona un listado de tiendas aptas para cambios y/o
+            devoluciones.
+
+            Las devoluciones y/o cambios se deben realizar en la tienda de lunes a domingo de 8:00am a 10:00pm todos los
+            días, excepto el 1 de enero.
+
+            Es requisito indispensable presentar el ticket de compra para gestionar un cambio y/o devolución. Además, se
+            deberá presentar el documento de identidad físico del titular de la tarjeta en caso que el pago haya sido
+            realizado con Tarjeta de crédito o del titular de la compra en caso que se haya cancelado con cualquier otro
+            medio de pago.
+
+            El producto debe estar en óptimo estado: en su empaque original, con sus etiquetas debidamente legibles, con
+            accesorios y componentes completos y sin haber sido utilizado ni consumido.
+
+            El producto no debe estar deteriorado o presentar manipulaciones que afecten su condición de nuevo
+
+            No aplica para ventas corporativas
+
+          </p>
+
+          <p>
+            Todo cambio y/o devolución de compra online inmediata se gestionará por Ecommerce, luego que el cliente
+            valide
+            la entrega del pedido, y se procederá bajo los lineamientos establecidos.
+
+            Los productos electro a cambiar o devolver pasarán por una revisión técnica, la duración de dicha revisión
+            será estipulada por la marca representante del producto. Para el cambio o devolución por fallas o averías de
+            origen sobre productos sujetos a garantía, se aplicarán las condiciones establecidas en la misma.
+
+            Si la devolución y/o cambio de mercadería se debe a una omisión y/o error del cliente, éste se debe acercar
+            a
+            la tienda donde realizó la compra física y para transacciones online se indica el listado para gestionar los
+            cambios y/o devoluciones luego de la recepción/validación del pedido.
+
+          </p>
+
+          <p>
+            En caso de venta por la página web, si el cambio es por un error de SPSA, se realizará el recojo en la
+            dirección del pedido original del cliente sin costo adicional para él, en caso de no encontrarse la persona
+            solicitante, indicar la persona autorizada para el cambio y/o devolución. De no encontrarse el cliente
+            durante
+            la fecha y hora pactada se procederá a tomar evidencia (foto y llamada telefónica al cliente) lo cual lo
+            realiza el auxiliar de despacho, posterior a ello, se dará por anulado el cambio sin derecho a posteriores
+            reclamos por el mismo producto y compra. El personal del transporte que recogerá el producto y entregará el
+            cambio no se encuentra autorizado bajo ninguna circunstancia a revisar y/o manipular el producto, su única
+            función será la de recogerlo y entregar el cambio del producto.
+
+            En caso de venta por la página web, el cliente podrá rechazar la entrega de cualquier producto al momento
+            del despacho si considera que no está en las condiciones requeridas. El cliente debe revisar los productos
+            detalladamente en el momento de la entrega, luego de ello se asume la responsabilidad del cliente.
+          </p><br>
+
+          <div>
+            <img id="logo_final" class="img-fluid" src="IMG/logobarturen.png" alt="">
+          </div>
+
+          <!-- <p>
+            La devolución del monto se realizará en el mismo medio de pago con el que se realizó la compra.
+
+            En el caso de tarjetas de crédito, el plazo de devolución de dinero, dependerá de las políticas del banco
+            emisor de la tarjeta del cliente.
+
+            En caso el cliente haya cancelado a través de una tarjeta de crédito y solicite la devolución a través de un
+            “Credivoucher”, acepta y declara estar en conocimiento de que la venta original mantiene las condiciones de
+            crédito pactadas previamente toda vez que no se ha efectuado el extorno correspondiente, debiendo cancelar
+            los
+            intereses bancarios generados por la compra original. El cliente debe firmar la siguiente carta: SSC – FR040
+            Solicitud de no extorno constatando su conformidad.
+
+            La devolución o cambio de mercadería implica la generación de un comprobante de pago vinculado a la
+            transacción original, denominado “Nota de crédito”, así mismo implica la entrega física (devolución) de la
+            mercadería por parte del cliente a la tienda.
+          </p> -->
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section><br>
+
+
+
+<!-- FOOTER -->
+    
+  
+<footer>
+  <div class="container-fluid text-white" id="footer"><br>
+    <div class="row">
+      <div class="col">
+        <strong>Comunicate con nosotros</strong>
+        <li>Cajamarca: 956345432</li>
+        <li>Provincia: 954235674</li><br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.077746730167!2d-79.86522188540813!3d-6.760374295113184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceeeffd190ddd%3A0xce387ae6229aa09e!2sUSAT!5e0!3m2!1ses-419!2spe!4v1637965370242!5m2!1ses-419!2spe"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col">
+        <strong>Nosotros</strong>
+        <ul>
+          <li>¿Quiénes somos?<a role="button" class="text-white nav-link" href="nosotros.html"></a> </li>
+          <li>Misión y visión<a role="button" class="text-white nav-link" href="nosotros.html"></a> </li>
+          <li>Responsabilidad social<a role="button" class="text-white nav-link" href="nosotros.html"></a> </li>
+          <li>Libro de reclamaciones<a role="button" class="text-white nav-link" href="nosotros.html"></a> </li>
+        </ul>
+      </div>
+      <div class="col">
+        <strong>Te informamos</strong>
+        <ul>
+          <li>Vende con nosotros<a role="button" class="text-white nav-link" href="nosotros.html"></a> </li>
+        </ul>
+      </div>                
+      <div class="col">
+        <strong>Atención al cliente</strong>
+        <ul>
+          <li>Tutorial de compras<a role="button" class="text-white nav-link" href="atencion_cliente.html"></a></li>    
+          <li>Preguntas frecuentes<a role="button" class="text-white nav-link" href="atencion_cliente.html"></a></li>
+          <li>Cambios y devoluciones<a role="button" class="text-white nav-link" href="atencion_cliente.html"></a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <strong>Politicas y condiciones</strong>
+        <li>Política de datos personales<a role="button" class="text-white nav-link" href="politicas_datos.html"></a></li>
+        <li>Condiciones de promociones<a role="button" class="text-white nav-link" href="codigos_promociones.html"></a></li>
+        <li>Términos y condiciones<a role="button" class="text-white nav-link" href="terminos_condiciones.html"></a></li>
+
+      </div>
+    </div>
+    <div class="row" id="iconos">
+      <div class="col text-center">
+        <strong>Siguenos en</strong>
+        <div>
+          <i href="" class="fab fa-facebook-f"></i>
+          <i href="" class="fab fa-instagram "></i>
+          <i href="" class="fab fa-twitter"></i>
+          <i href="" class="fab fa-youtube "></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+<script src="JS/atencion_cliente.js"></script>
+</body>
+
+</html>
